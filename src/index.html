@@ -3,21 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esporos Noturnos</title>
+    <title>Pier's BirthDay</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lobster&family=Pacifico&family=Roboto:ital,wght@0,399;1,399&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/logo_aniversarioforeal.png" alt="">
         <p class="hero__text">
-            O evento do meu aniversário começa em 15d 20h 10m 18s
+            O evento do meu aniversário começa em <span id="contador"></span>
         </p>
+        <div class="infos-bar">
+            <ul class="infos-bar__infos">
+                <li class="infos-bar__infos__item">
+                    <b>Localização</b>
+                    Chácara do berne - lajeado de baixo - Irati
+                </li>
+                <li class="infos-bar__infos__item">
+                    <b>Preço</b>
+                    A partir de R$ 80,00
+                </li>
+                <li class="infos-bar__infos__item">
+                    <b>Quando</b>
+                    08/11/2025 às 20hrs
+                </li>
+            </ul>
+            <a href="#" class="button button--primary">
+                Garanta sua vaga
+            </a>
+        </div>
         </div>
     </header>
+    <section class="event event--tech-house">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Tech-house</h2>
+                <p class="event__details__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores laborum sed autem id reiciendis, facere voluptatum voluptatibus consequuntur, nihil itaque vel ratione reprehenderit quos accusamus consectetur culpa beatae excepturi nostrum.</p>
+            </div>
+            <img class="event__image" src="./images/pranksters.jpg" alt="front-end">
+        </div>
+    </section>
+        <section class="event event--low event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Low</h2>
+                <p class="event__details__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores laborum sed autem id reiciendis, facere voluptatum voluptatibus consequuntur, nihil itaque vel ratione reprehenderit quos accusamus consectetur culpa beatae excepturi nostrum.</p>
+            </div>
+            <img class="event__image" src="./images/low.jpg" alt="front-end">
+        </div>
+    </section>
+            <section class="event event--dark-psy">
+        <div class="container"  data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Dark-psy</h2>
+                <p class="event__details__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores laborum sed autem id reiciendis, facere voluptatum voluptatibus consequuntur, nihil itaque vel ratione reprehenderit quos accusamus consectetur culpa beatae excepturi nostrum.</p>
+            </div>
+            <img class="event__image" src="./images/darkpsy.jpg" alt="front-end">
+        </div>
+    </section>
+            <section class="event event--psy-trance event--image-left">
+        <div class="container"  data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Psy-Trance</h2>
+                <p class="event__details__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores laborum sed autem id reiciendis, facere voluptatum voluptatibus consequuntur, nihil itaque vel ratione reprehenderit quos accusamus consectetur culpa beatae excepturi nostrum.</p>
+            </div>
+            <img class="event__image" src="./images/psytrance.jpg" alt="front-end">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
